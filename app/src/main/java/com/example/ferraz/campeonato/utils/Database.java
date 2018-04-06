@@ -13,6 +13,10 @@ public class Database extends SQLiteOpenHelper {
     private static final String TABELA_JOGO = "jogo";
     private static final String TABELA_RODADA = "rodada";
     private static final String TABELA_CAMPEONATO = "campeonato";
+    private static final String CAMPO_JOGADOR_ID = "idJogador";
+    private static final String CAMPO_JOGADOR_NOME = "nomeJogador";
+
+
 
     public Database(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

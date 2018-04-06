@@ -3,11 +3,12 @@ package com.example.ferraz.campeonato.model;
 
 import android.media.Image;
 
-public class Jogador {
+public class Player {
     private String nome;
+
     private Time time;
 
-    public Jogador(String nome, Time time) {
+    public Player(String nome, Time time) {
         this.nome = nome;
         this.time = time;
     }

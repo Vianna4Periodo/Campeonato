@@ -5,7 +5,6 @@ public class Jogo {
     private Time timeB;
     private int placarTimeA;
     private int placarTimeB;
-    private Time vencedor;
 
     public Jogo(Time timeA, Time timeB, int placarTimeA, int placarTimeB) {
         this.timeA = timeA;
@@ -54,14 +53,5 @@ public class Jogo {
         this.placarTimeB = placarTimeB;
     }
 
-    public Time getVencedor() {
-        if(placarTimeA == placarTimeB)
-            vencedor = null;
-        else if(placarTimeA > placarTimeB)
-            vencedor = timeA;
-        else
-            vencedor = timeB;
 
-        return vencedor;
-    }
 }
